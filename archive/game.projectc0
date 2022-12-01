@@ -5,19 +5,20 @@ write_log = 0
 compress_archive = 0
 publisher = unnamed
 developer = unnamed
+custom_resources = chars/
 title_as_file_name = ZurViewer
 
 [display]
-width = 1280
-height = 720
+width = 1000
+height = 800
 high_dpi = 0
-samples = 0
+samples = 4
 fullscreen = 0
-update_frequency = 120
-swap_interval = 1
-vsync = 0
+update_frequency = 90
+swap_interval = 0
+vsync = 1
 display_profiles = /builtins/render/default.display_profilesc
-dynamic_orientation = 0
+dynamic_orientation = 1
 display_device_info = 0
 
 [render]
@@ -49,16 +50,16 @@ velocity_threshold = 1
 max_fixed_timesteps = 2
 
 [bootstrap]
-main_collection = /library/library_begin.collectionc
+main_collection = /dump.collectionc
 render = /builtins/render/default.renderc
 
 [graphics]
-default_texture_min_filter = nearest
-default_texture_mag_filter = nearest
+default_texture_min_filter = linear
+default_texture_mag_filter = linear
 max_draw_calls = 1024
 max_characters = 8192
 max_debug_vertices = 10000
-texture_profiles = /builtins/graphics/default.texture_profiles
+texture_profiles = /profile.texture_profiles
 verify_graphics_calls = 1
 memory_size = 512
 
@@ -154,13 +155,13 @@ custom_heap_size = 0
 heap_size = 128
 htmlfile = /builtins/manifests/web/engine_template.html
 cssfile = /builtins/manifests/web/dark_theme.css
-splash_image = /materials/gui/splash.jpg
+splash_image = /materials/gui/main/splash.png
 archive_location_prefix = archive
 archive_location_suffix = 
 engine_arguments = --verify-graphics-calls=false
 wasm_streaming = 0
-show_fullscreen_button = 1
-show_made_with_defold = 1
+show_fullscreen_button = 0
+show_made_with_defold = 0
 show_console_banner = 1
 scale_mode = downscale_fit
 
@@ -179,7 +180,7 @@ http_thread_count = 4
 http_cache_enabled = 1
 
 [library]
-include_dirs = https://github.com/Lerg/extension-imageloader/archive/master.zip
+include_dirs = 
 
 [script]
 shared_state = 1
@@ -202,7 +203,7 @@ max_tile_count = 2048
 
 [engine]
 run_while_iconified = 0
-fixed_update_frequency = 30
+fixed_update_frequency = 10
 
 [webmonetization]
 payment_pointer = YOUR_PAYMENT_POINTER
