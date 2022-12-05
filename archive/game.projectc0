@@ -1,11 +1,11 @@
 [project]
 title = Zur Viewer
-version = 0.0.1
+version = Alpha 1.0
 write_log = 0
 compress_archive = 0
 publisher = unnamed
 developer = unnamed
-custom_resources = chars/
+custom_resources = chars/base/, chars/title/anims/,
 title_as_file_name = ZurViewer
 
 [display]
@@ -14,8 +14,8 @@ height = 800
 high_dpi = 0
 samples = 4
 fullscreen = 0
-update_frequency = 90
-swap_interval = 0
+update_frequency = 0
+swap_interval = 1
 vsync = 1
 display_profiles = /builtins/render/default.display_profilesc
 dynamic_orientation = 1
@@ -160,9 +160,9 @@ archive_location_prefix = archive
 archive_location_suffix = 
 engine_arguments = --verify-graphics-calls=false
 wasm_streaming = 0
-show_fullscreen_button = 0
-show_made_with_defold = 0
-show_console_banner = 1
+show_fullscreen_button = 1
+show_made_with_defold = 1
+show_console_banner = 0
 scale_mode = downscale_fit
 
 [particle_fx]
