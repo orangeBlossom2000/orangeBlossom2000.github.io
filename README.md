@@ -1,4 +1,4 @@
-# orangeBlossom2000.github.io
+# ZurViewer
 
 This is a page for ZurViewer - a small web-app for showcasing prerendered stuff in a simple but elegant way.
 
