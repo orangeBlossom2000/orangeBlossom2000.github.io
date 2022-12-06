@@ -54,8 +54,8 @@ main_collection = /dump.collectionc
 render = /builtins/render/default.renderc
 
 [graphics]
-default_texture_min_filter = linear
-default_texture_mag_filter = linear
+default_texture_min_filter = nearest
+default_texture_mag_filter = nearest
 max_draw_calls = 512
 max_characters = 4096
 max_debug_vertices = 10000
