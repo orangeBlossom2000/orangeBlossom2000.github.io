@@ -5,7 +5,7 @@ write_log = 0
 compress_archive = 0
 publisher = unnamed
 developer = unnamed
-custom_resources = chars/base/, chars/title/anims/, chars/zili/anims/,
+custom_resources = chars/
 title_as_file_name = ZurViewer
 
 [display]
@@ -14,9 +14,9 @@ height = 800
 high_dpi = 0
 samples = 0
 fullscreen = 0
-update_frequency = 70
-swap_interval = 0
-vsync = 0
+update_frequency = 60
+swap_interval = 1
+vsync = 1
 display_profiles = /builtins/render/default.display_profilesc
 dynamic_orientation = 0
 display_device_info = 0
@@ -203,7 +203,7 @@ max_tile_count = 256
 
 [engine]
 run_while_iconified = 0
-fixed_update_frequency = 10
+fixed_update_frequency = 30
 
 [webmonetization]
 payment_pointer = YOUR_PAYMENT_POINTER
